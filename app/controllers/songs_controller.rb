@@ -63,6 +63,13 @@ class SongsController < ApplicationController
     end
   end
 
+  #A page for randomizing three karaoke choices
+  def three_songs
+    @songs = Song.where(user: current_user)
+    @user = current_user
+    @shuffle = @songs.all.shuffle
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_song

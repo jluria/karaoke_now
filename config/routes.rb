@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :songs
+  resources :songs do
+    collection do
+      get :three_songs
+    end
+  end
 
   get 'pages/dashboard'
 
