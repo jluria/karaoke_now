@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :songs
 
-  get 'songs/index'
+  get 'pages/dashboard'
 
 
   ######  COMMENTED OUT BUT 'ORIGINAL HOMEPAGE'  #####
