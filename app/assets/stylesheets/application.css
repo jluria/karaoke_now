@@ -23,6 +23,10 @@ body {
 	margin: 10px;
 }
 
+.centered {
+    text-align:center;
+}
+
 
 /*#welcome_title {
     width: 500px;
